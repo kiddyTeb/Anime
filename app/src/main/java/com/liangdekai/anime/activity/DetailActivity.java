@@ -36,7 +36,7 @@ public class DetailActivity extends AppCompatActivity implements AdapterView.OnI
     private ProgressDialog mProgressDialog ;
 
     /**
-     * 启动该活动
+     * 启动活动
      * @param context
      * @param name
      */

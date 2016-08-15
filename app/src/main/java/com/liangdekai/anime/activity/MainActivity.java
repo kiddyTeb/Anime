@@ -132,6 +132,10 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+    /**
+     * 加载数据
+     * @param name
+     */
     private void loadData(String name){
         mCartoonList = mCartoonDB.loadCartoonInfo(name);
         if (mCartoonList.size() == 0){
@@ -144,6 +148,10 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
+    /**
+     * 发送网络请求
+     * @param name
+     */
     private void sendRequest(final String name){
         String type = TransformString.transform(name) ;
         String url = "http://japi.juhe.cn/comic/book?name=&type="+type+"&skip=&finish=&key=eff3d8473c455edbc5e47e2b0b2d21ea";
