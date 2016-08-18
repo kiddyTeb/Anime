@@ -197,6 +197,13 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
+    /**
+     * ITEM点击事件
+     * @param adapterView
+     * @param view
+     * @param i
+     * @param l
+     */
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
         DetailActivity.startActivity(MainActivity.this , mCartoonList.get(i).getName());
